@@ -10,7 +10,7 @@
 	We want to make sure that we only display certain fields.
 	This script will detect if a user is on a mobile device.
 
-	Include this function in overall_header.tpl's <body onload="isMobileDevice();">
+	Include this in <body onload="isMobileDevice();">
 
 */
 
@@ -23,12 +23,20 @@
 		// user is on a low resolution device
 		// Check type of device
 		if (browser.match(/Android/i) || 
+			browser.match(/Bada/i) || 
 			browser.match(/BlackBerry/i) || 
+			browser.match(/Firefox OS/i) || 
+			browser.match(/Kindle/i) || 
 			browser.match(/iPad/i) || 
 			browser.match(/iPhone/i) ||
 			browser.match(/iPod/i) || 
+			browser.match(/Maemo/i) || 
+			browser.match(/Meego/i) || 
+			browser.match(/Symbian/i) || 
 			browser.match(/webOS/i) || 
-			browser.match(/Windows Phone/i) {
+			browser.match(/Windows CE/i) || 
+			browser.match(/Windows Phone/i) ||
+			browser.match(/Windows RT/i) {
 			userAgentOnMobile = true;
 		}
 	} else {
