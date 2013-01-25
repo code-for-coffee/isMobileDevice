@@ -3,14 +3,13 @@
 	isMobileDevice.js
 
 	https://github.com/code-for-coffee
-	Last Updated 1/21/13
+	Last Updated 1/25/13
+	james [at] codeforcoffee [dot] org
 
 	Released under GPL.
+	http://www.gnu.org/licenses/gpl.html
 
-	We want to make sure that we only display certain fields.
 	This script will detect if a user is on a mobile device.
-
-	Include this in <body onload="isMobileDevice();">
 
 */
 
