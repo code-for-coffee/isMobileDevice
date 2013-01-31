@@ -42,4 +42,5 @@
 		// user is on a standard resolution device (not "mobile")
 		return userAgentOnMobile = false;
 		}
+	}
 }
