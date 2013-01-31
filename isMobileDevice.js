@@ -35,12 +35,11 @@
 			browser.match(/webOS/i) || 
 			browser.match(/Windows CE/i) || 
 			browser.match(/Windows Phone/i) ||
-			browser.match(/Windows RT/i) {
-			userAgentOnMobile = true;
-		}
-	} else {
+			browser.match(/Windows RT/i) 
+		{
+		return userAgentOnMobile = true;
+		} else {
 		// user is on a standard resolution device (not "mobile")
-		userAgentOnMobile = false;
-	}
-	return AgentOnMobile;
+		return userAgentOnMobile = false;
+		}
 }
