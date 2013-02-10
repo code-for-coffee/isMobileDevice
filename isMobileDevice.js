@@ -3,7 +3,7 @@
 	isMobileDevice.js
 
 	https://github.com/code-for-coffee
-	Last Updated 1/25/13
+	Last Updated 2/10/13
 	james [at] codeforcoffee [dot] org
 
 	Released under GPL.
@@ -36,12 +36,15 @@
 			browser.match(/webOS/i) || 
 			browser.match(/Windows CE/i) || 
 			browser.match(/Windows Phone/i) ||
-			browser.match(/Windows RT/i) 
-		{
-		return userAgentOnMobile = true;
-		} else {
-		// user is on a standard resolution device (not "mobile")
-		return userAgentOnMobile = false;
+			browser.match(/Windows RT/i) {
+
+				// return that the device is mobile
+				return userAgentOnMobile = true;
+				
+			} else {
+
+				// user is on a standard resolution device (not "mobile")
+				return userAgentOnMobile = false;
+			}
 		}
 	}
-}
