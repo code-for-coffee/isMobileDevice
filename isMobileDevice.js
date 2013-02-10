@@ -24,6 +24,7 @@
 		if (browser.match(/Android/i) || 
 			browser.match(/Bada/i) || 
 			browser.match(/BlackBerry/i) || 
+			browser.match(/BB10/i) || 
 			browser.match(/Firefox OS/i) || 
 			browser.match(/Kindle/i) || 
 			browser.match(/iPad/i) || 
