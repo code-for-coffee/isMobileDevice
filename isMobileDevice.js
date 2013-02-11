@@ -10,6 +10,9 @@
 	http://www.gnu.org/licenses/gpl.html
 
 	This script will detect if a user is on a mobile device.
+	
+	New! Updating screen size based on:
+	http://gs.statcounter.com/#resolution-na-monthly-201212-201302
 
 */
 
@@ -18,7 +21,7 @@
 
 	function isMobileDevice() {
 	// test window widght/height first
-	if(window.innerWidth <= 1024 && window.innerHeight <= 800) {
+	if(window.innerWidth <= 1023 && window.innerHeight <= 767) {
 		// user is on a low resolution device
 		// Check type of device
 		if (browser.match(/Android/i) || 
